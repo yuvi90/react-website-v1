@@ -1,8 +1,79 @@
-import React from 'react'
+// Deps
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+// Components
+import { FooterMainContainer } from './FooterElements';
+import { Button } from "../../styles/GlobalComponents";
+
+//-----------------------------------------------------
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <FooterMainContainer>
+      <section className="contact-short">
+        <div className="grid grid-two-column">
+
+          <div>
+            <h3>Ready to get started?</h3>
+            <h3>Talk to us today</h3>
+          </div>
+
+          <div>
+            <NavLink to="/contact">
+              <Button>Get Started</Button>
+            </NavLink>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="upper-section">
+        <div className="container grid grid-four-column">
+
+          <div className="footer-about">
+            <h3>Yuvi Technical</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div className="footer-subscribe">
+            <h3>Subscribe to get important updates</h3>
+            <form action="#">
+              <input type="email" required autoComplete="none" placeholder="Enter your email..." />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+
+          <div className="footer-social">
+            <h3>Follow Us</h3>
+            <div className="social-icons">
+              <div><NavLink><FaFacebook className="icons" /></NavLink></div>
+              <div><NavLink><FaInstagram className="icons" /></NavLink></div>
+              <div><NavLink><FaYoutube className="icons" /></NavLink></div>
+            </div>
+          </div>
+
+          <div className="footer-about">
+            <h3>Call Us</h3>
+            <p>+91-9872479431</p>
+          </div>
+
+        </div>
+
+        <div className="bottom-section">
+          <hr />
+          <div className="container grid grid-two-column">
+            <p>@{new Date().getFullYear()} Yuvi Technical. All Rights Reserved</p>
+            <div>
+              <p>Privacy Policy</p>
+              <p>Terms & Conditions</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </FooterMainContainer>
   )
 }
 
