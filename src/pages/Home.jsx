@@ -1,7 +1,7 @@
 // Deps
 import React, { useEffect } from 'react';
 // Components
-import { HeroSection } from '../components';
+import { HeroSection, Services } from '../components';
 // Data
 import { useDataContext } from '../context/DataProvider';
 
@@ -16,6 +16,7 @@ const Home = () => {
   return (
     <>
       <HeroSection />
+      <Services />
     </>
   )
 }

@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Work Sans', sans-serif;
+        user-select: none;
     }
 
     html {
@@ -56,6 +57,13 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
     }
 
+    .common-heading {
+        font-size: 3.8rem;
+        font-weight: 600;
+        margin-bottom: 6rem;
+        text-transform: uppercase;
+    }
+
     .grid {
         display: grid;
         gap: 9rem;
@@ -72,5 +80,5 @@ export const GlobalStyle = createGlobalStyle`
     .grid-four-column {
         grid-template-columns: 1fr 1.2fr 0.5fr 0.8fr;
     }
-
+    
 `;

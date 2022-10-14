@@ -7,7 +7,7 @@ import { GlobalStyle } from './styles/GlobalStyle';
 import { theme } from './styles/ThemeData';
 // Components
 import { Navbar, Footer } from './components';
-import { Home, Contact, About, Services, Error404 } from './pages';
+import { Home, Contact, About, ServicesPage, Error404 } from './pages';
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
