@@ -1,10 +1,12 @@
 // Deps
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 // Components
 import { RootHeroContainer, HeroButton } from './HeroSectionElements';
 // Data
 import { useDataContext } from '../../context/DataProvider';
+
+//--------------------------------------------------------------------
 
 const HeroSection = () => {
 

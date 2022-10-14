@@ -7,6 +7,8 @@ import { Button } from "../../styles/GlobalComponents";
 // Data
 import { dummyData } from '../../assets/Dummydata';
 
+//----------------------------------------------------------
+
 const Services = () => {
   return (
     <MainContainer className="section">

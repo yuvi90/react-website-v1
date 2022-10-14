@@ -1,4 +1,8 @@
+// Deps
 import styled from 'styled-components';
+
+
+//-----------------------------------------------Main Container
 
 export const MainContainer = styled.section`
     padding: 9rem 0;

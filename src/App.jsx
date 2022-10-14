@@ -9,6 +9,8 @@ import { theme } from './styles/ThemeData';
 import { Navbar, Footer } from './components';
 import { Home, Contact, About, ServicesPage, Error404 } from './pages';
 
+//------------------------------------------------------------
+
 const App = () => {
   return (
     <ThemeProvider theme={theme}>

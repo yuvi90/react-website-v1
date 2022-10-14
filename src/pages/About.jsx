@@ -5,6 +5,8 @@ import { HeroSection } from '../components';
 // Data
 import { useDataContext } from '../context/DataProvider';
 
+//-------------------------------------------------------
+
 const About = () => {
 
   const data = useDataContext();

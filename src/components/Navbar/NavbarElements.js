@@ -1,4 +1,7 @@
+// Deps
 import styled from "styled-components";
+
+//-----------------------------------------------Main Container
 
 export const RootHeader = styled.header`
     padding: 0 4.8rem;
@@ -12,6 +15,8 @@ export const RootHeader = styled.header`
         font-size: 5rem;
     }
 `;
+
+//-----------------------------------------------Nav
 
 export const Nav = styled.nav`
     ul {
