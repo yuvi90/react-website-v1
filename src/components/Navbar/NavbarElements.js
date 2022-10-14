@@ -14,7 +14,9 @@ export const RootHeader = styled.header`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 130rem;
+        width: 100%;
+        max-width: 140rem;
+        padding: 0 4.8rem;
     }
 
     .logo {
@@ -45,7 +47,7 @@ export const Nav = styled.nav`
                 color: ${({theme})=>theme.colors.helper};
             }
             
-            &:active{
+            &:active {
                 color: ${({theme})=>theme.colors.helper};
             }
 
