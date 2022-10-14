@@ -4,12 +4,18 @@ import styled from "styled-components";
 //-----------------------------------------------Main Container
 
 export const RootHeader = styled.header`
-    padding: 0 4.8rem;
     height: 10rem;
     background-color: ${({theme}) => theme.colors.bg};
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 130rem;
+    }
 
     .logo {
         font-size: 5rem;
