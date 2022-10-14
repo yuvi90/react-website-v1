@@ -41,7 +41,7 @@ export const RootHeroContainer = styled.section`
         align-items: center;
         
         picture {
-            text-align: center;
+            text-align: end;
         }
 
         img {
