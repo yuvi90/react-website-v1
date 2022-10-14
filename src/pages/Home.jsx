@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 // Components
 import { HeroSection, Services } from '../components';
+import Contact from "./Contact";
 // Data
 import { useDataContext } from '../context/DataProvider';
 
@@ -19,6 +20,7 @@ const Home = () => {
     <>
       <HeroSection />
       <Services />
+      <Contact />
     </>
   )
 }
