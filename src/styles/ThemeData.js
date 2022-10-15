@@ -1,5 +1,7 @@
+import { palette } from "./partials";
+
 export const theme = {
-  
+
   colors: {
     heading: "rgb(24 24 29)",
     text: "rgb(24 24 29)",
@@ -20,7 +22,9 @@ export const theme = {
 
   mode: {
     light: {},
-    dark: {}
+    dark: {
+      bg: palette.grey[600],
+    }
   },
-  
+
 };
