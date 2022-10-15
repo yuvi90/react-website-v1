@@ -1,4 +1,5 @@
 export const theme = {
+  
   colors: {
     heading: "rgb(24 24 29)",
     text: "rgb(24 24 29)",
@@ -16,4 +17,10 @@ export const theme = {
   },
 
   media: { mobile: "768px", tab: "998px" },
+
+  mode: {
+    light: {},
+    dark: {}
+  },
+  
 };

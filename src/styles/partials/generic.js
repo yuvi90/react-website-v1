@@ -1,64 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { css } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+//------------------------------------------------------
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Work Sans', sans-serif;
-        user-select: none;
-    }
-
-    html {
-        font-size: 62.5%; /* converting 1rem to 10px */
-        overflow-x: hidden;
-        /* scroll-behaviour: smooth; */
-    }
-
-    ::-webkit-scrollbar {
-        width: 1.5rem;
-    }
-
-    ::-webkit-scrollbar-track {
-        background-color: rgb(24 24 29);
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #fff;
-        border: 5px solid transparent;
-        border-radius: 9px;
-        background-clip: content-box;
-    }
-
-    h1 {
-        color: ${({ theme }) => theme.colors.heading};
-        font-size: 6rem;
-        font-weight: 900;
-    }
-
-    h2 {
-        color: ${({ theme }) => theme.colors.heading};
-        font-size: 4.4rem;
-        font-weight: 300;
-        white-space: normal;
-        text-align: center;
-    }
-    
-    h3 {
-        font-size: 1.8rem;
-        font-weight: 400;
-    }
-
-    p {
-        color: ${({ theme }) => theme.colors.text};
-        opacity: 0.7;
-        font-size: 1.65rem;
-        line-height: 1.5;
-        margin-top: 1rem;
-        font-weight: 400;
-    }
-
+export const generic = css`
     a {
         text-decoration: none;
     }
@@ -87,11 +31,11 @@ export const GlobalStyle = createGlobalStyle`
     .grid-two-column {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .grid-three-column {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .grid-four-column {
         grid-template-columns: 1fr 1.2fr 0.5fr 0.8fr;
     }
@@ -126,9 +70,9 @@ export const GlobalStyle = createGlobalStyle`
             transform: scale(0.9);
         }
     }
-    
+
     /*Media Queries */
-    
+
     @media screen and (max-width: ${({ theme }) => theme.media.tab}){
         
         .container {
@@ -140,7 +84,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
     }
-    
+
     @media screen and (max-width: ${({ theme }) => theme.media.mobile}){
         .container {
             padding: 0 3.2rem;
@@ -155,5 +99,4 @@ export const GlobalStyle = createGlobalStyle`
         }
 
     }
-
-`;
+`
