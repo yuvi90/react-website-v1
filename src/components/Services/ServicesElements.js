@@ -76,4 +76,5 @@ export const MainContainer = styled.section`
             transition: all 0.2s linear;
         }
     }
-`
+
+`;

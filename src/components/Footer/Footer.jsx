@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-subscribe">
-            <h3>Subscribe to get important updates</h3>
+            <h3>Subscribe to get updates</h3>
             <form action="#">
               <input type="email" required autoComplete="none" placeholder="Enter your email..." />
               <input type="submit" value="Subscribe" />
@@ -55,7 +55,7 @@ const Footer = () => {
 
           <div className="footer-about">
             <h3>Call Us</h3>
-            <p>+91-9872479431</p>
+            <a href="tel:9872479431">+91-9872479431</a>
           </div>
 
         </div>
@@ -65,8 +65,8 @@ const Footer = () => {
           <div className="container grid grid-two-column">
             <p>@{new Date().getFullYear()} Yuvi Technical. All Rights Reserved</p>
             <div>
-              <p>Privacy Policy</p>
-              <p>Terms & Conditions</p>
+              <a href='#' className='footer-bottom-links'>Privacy Policy</a>
+              <a href='#' className='footer-bottom-links'>Terms & Conditions</a>
             </div>
           </div>
         </div>

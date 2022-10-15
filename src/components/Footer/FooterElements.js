@@ -33,6 +33,15 @@ export const FooterMainContainer = styled.footer`
             color: ${({ theme }) => theme.colors.white};
         }
         
+        a {
+            color: ${({ theme }) => theme.colors.white};
+            font-size: 1.8rem;
+
+            &:hover {
+                color: ${({theme})=>theme.colors.helper};
+            }
+        }
+        
         .social-icons {
             display: flex;
             gap: 2rem;
@@ -58,6 +67,15 @@ export const FooterMainContainer = styled.footer`
                 margin-bottom: 2rem;
                 color: ${({ theme }) => theme.colors.hr};
                 height: 0.1px;
+            }
+
+            .footer-bottom-links {
+                display: block;
+                margin-top: 0.5rem;
+            }
+
+            .grid {
+                align-items: center;
             }
         }
     }

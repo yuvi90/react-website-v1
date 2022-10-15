@@ -126,4 +126,34 @@ export const GlobalStyle = createGlobalStyle`
             transform: scale(0.9);
         }
     }
+    
+    /*Media Queries */
+    
+    @media screen and (max-width: ${({ theme }) => theme.media.tab}){
+        
+        .container {
+            padding: 0 3.2rem;
+        }
+
+        .grid-three-column {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+    
+    @media screen and (max-width: ${({ theme }) => theme.media.mobile}){
+        .container {
+            padding: 0 3.2rem;
+        }
+        
+        .grid {
+            gap: 3.2rem;         
+        }
+
+        .grid-two-column, .grid-three-column, .grid-four-column {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
 `;
