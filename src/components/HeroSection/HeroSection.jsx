@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="section-hero-data">
           <p className="hero-topline">THIS IS ME</p>
           <h1 className="hero-heading">{data.name}</h1>
-          <p className="hero-para">I'm Yuvi. A Full Stack Developer, Youtuber and Freelancer.</p>
+          <p className="hero-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, pariatur eos iste ad quos reprehenderit repellat placeat facere nulla illum expedita odit reiciendis soluta. Corporis excepturi officia quod quo aliquid?</p>
           <HeroButton className="btn hire-me-btn"><NavLink to="/contact">Hire Me</NavLink></HeroButton>
         </div>
 
