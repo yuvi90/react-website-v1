@@ -1,14 +1,14 @@
 // Deps
 import styled from "styled-components";
 
-//-----------------------------------------------Main Container
+//-----------------------------------------------RootContainer
 
-export const RootHeader = styled.header`
-    height: 10rem;
-    background-color: ${({ theme }) => theme.colors.bg};
+export const RootContainer = styled.header`
+    background-color: ${({ theme }) => theme.colors.background.default};
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10rem;
     
     .nav-wrapper {
         position: relative;
@@ -16,15 +16,17 @@ export const RootHeader = styled.header`
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        max-width: 140rem;
-        padding: 0 4.8rem;
+        
+        &__logo {
+            font-size: 5rem;
+        }
 
-        .mobile-menu-icon {
+        &__menu-icon {
+            display: none;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            right: 4.5rem;
-            display: none;
+            right: 3.2rem;
             font-size: 2.8rem;
             cursor: pointer;
             
@@ -32,10 +34,6 @@ export const RootHeader = styled.header`
                 display: block;
             }
         }
-    }
-
-    .logo {
-        font-size: 5rem;
     }
 `;
 
@@ -54,17 +52,16 @@ export const Nav = styled.nav`
         
         @media screen and (max-width: ${({ theme }) => theme.media.mobile}) {
             flex-direction: column;
-            background-color: ${({ theme }) => theme.colors.bg};
+            background-color: ${({ theme }) => theme.colors.background.default};
             position: absolute;
-            top: 7rem;
-            right: ${(props) => (props.isMenuOpen ? "0" : "100%")};
+            top: 6rem;
+            right: ${( props ) => props.isMenuOpen ? "0" : "100%"};
             height: 100vh;
             width: 100%;
             z-index: 999;
         }
-
-        .nav-links {
-            
+        
+        .menu-links {
             &:link, &:visited {
                 transition: color 0.3s linear;
                 text-transform: uppercase;
@@ -79,7 +76,6 @@ export const Nav = styled.nav`
             &:active {
                 color: ${({ theme }) => theme.colors.helper};
             }
-
         }
     }
-`;
+`

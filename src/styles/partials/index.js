@@ -1,4 +1,4 @@
-export { global } from "./global";
+export { globalStyles } from "./globalStyles";
 export { typography } from "./typography";
-export { generic } from "./generic";
+export { genericStyles } from "./genericStyles";
 export { palette } from "./palette";
