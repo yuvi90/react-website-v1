@@ -3,7 +3,7 @@ import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from "styled-
 import PropTypes from 'prop-types';
 // Partial Styles
 import { globalStyles, genericStyles } from "./partials";
-import { theme } from './ThemeData';
+import { theme } from './config';
 
 //--------------------------------------------------------
 

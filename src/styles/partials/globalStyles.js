@@ -17,7 +17,7 @@ export const globalStyles = css`
         margin: 0;
         padding: 0;
         box-sizing: inherit;
-        font-family: ${({ theme }) => theme.fontFamily};
+        font-family: ${({ theme }) => theme.typo.fontFamily};
         user-select: none;
     }
 
@@ -26,7 +26,7 @@ export const globalStyles = css`
     }
 
     ::-webkit-scrollbar-track {
-        background-color: rgb(24 24 29);
+        background-color: #000;
     }
 
     ::-webkit-scrollbar-thumb {

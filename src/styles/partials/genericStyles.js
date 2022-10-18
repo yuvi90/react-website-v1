@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { bp, mediaQ } from "../utilities/mediaQ";
 
 //------------------------------------------------------
 
@@ -7,13 +8,13 @@ export const genericStyles = css`
     /*====#### TYPOGRAPHY ####====*/
 
     h1 {
-        color: ${({ theme }) => theme.colors.heading};
+        color: ${({ theme }) => theme.colors.text.primary};
         font-size: 6rem;
         font-weight: 900;
     }
 
     h2 {
-        color: ${({ theme }) => theme.colors.heading};
+        color: ${({ theme }) => theme.colors.text.primary};
         font-size: 4.4rem;
         font-weight: 300;
         text-align: center;
@@ -26,7 +27,7 @@ export const genericStyles = css`
     }
 
     p {
-        color: ${({ theme }) => theme.colors.text};
+        color: ${({ theme }) => theme.colors.text.secondary};
         font-size: 1.65rem;
         font-weight: 400;
         line-height: 1.5;
@@ -56,7 +57,6 @@ export const genericStyles = css`
         font-size: 3.8rem;
         font-weight: 600;
         margin-bottom: 6rem;
-        /* text-transform: uppercase; */
     }
 
     .grid {
@@ -73,45 +73,45 @@ export const genericStyles = css`
     }
 
     .grid-four-column {
-        grid-template-columns: 1fr 1.2fr 0.5fr 0.8fr;
+        /* grid-template-columns: 1fr 1.2fr 0.5fr 0.8fr; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     /* ====#### FORMS STYLING ####==== */
 
     input, textarea {
         max-width: 50rem;
-        color: ${({ theme }) => theme.colors.black};
         padding: 1.6rem 2.4rem;
-        border: 0.1rem solid ${({ theme }) => theme.colors.border};
         text-transform: uppercase;
+        color: ${({ theme }) => theme.colors.text.primary};
+        border: 0.1rem solid ${({ theme }) => theme.colors.secondary.main};
         box-shadow: ${({ theme }) => theme.colors.shadowSupport};
         resize: none;
         outline: none;
     }
 
     input[type="submit"] {
-        max-width: 16rem;
+        width: 16rem;
         margin-top: 2rem;
-        background-color: ${({ theme }) => theme.colors.btn};
-        color: ${({ theme }) => theme.colors.white};
         padding: 1.4rem 2.2rem;
-        border-style: solid;
-        border-width: 0.1rem;
         text-transform: uppercase;
+        background-color: ${({ theme }) => theme.colors.button.primary};
+        color: #fff;
         font-size: 1.8rem;
+        border: 0.1rem solid transparent;
         cursor: pointer;
 
         &:hover {
-            background-color: ${({ theme }) => theme.colors.white};
-            color: ${({ theme }) => theme.colors.btn};
-            border: 0.1rem solid ${({ theme }) => theme.colors.btn};
+            background-color: #fff;
+            color: ${({ theme }) => theme.colors.button.primary};
+            border: 0.1rem solid ${({ theme }) => theme.colors.button.primary};
             transform: scale(0.9);
         }
     }
 
     /*====#### MEDIA QUERIES ####====*/
 
-    @media screen and (max-width: ${({ theme }) => theme.media.tab}){
+    ${mediaQ("down", bp.md)} {
         
         .container {
             padding: 0 3.2rem;
@@ -123,7 +123,7 @@ export const genericStyles = css`
 
     }
 
-    @media screen and (max-width: ${({ theme }) => theme.media.mobile}){
+    ${mediaQ("down", bp.sm)} {
         .container {
             padding: 0 3.2rem;
         }

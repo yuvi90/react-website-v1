@@ -14,14 +14,14 @@ const App = () => {
     <ThemeProvider>      
       <BrowserRouter>
         <Navbar />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-        <Footer /> */}
+        <Footer />
       </BrowserRouter>      
     </ThemeProvider>
   )

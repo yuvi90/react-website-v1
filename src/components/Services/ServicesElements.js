@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.section`
     padding: 9rem 0;
-    background-color: ${({ theme }) => theme.colors.bg};
+    background-color: ${({ theme }) => theme.colors.background.default};
 
     .container {
         max-width: 120rem;
@@ -26,13 +26,13 @@ export const MainContainer = styled.section`
 
             .btn-readmore {
                 margin: 2rem 2rem;
-                background-color: rgb(0 0 0/ 0%);
+                background-color: #fff;
                 color: rgb(98 84 243);
-                border: 0.1rem solid rgb(98 84 243);
+                border: 0.1rem solid ${({ theme }) => theme.colors.button.primary};
                 font-size: 1.4rem;
 
                 &:hover {
-                    background-color: rgb(98 84 243);
+                    background-color: ${({ theme }) => theme.colors.button.primary};
                     color: #fff;
                 }
             }

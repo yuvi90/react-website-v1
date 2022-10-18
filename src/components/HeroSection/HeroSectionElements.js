@@ -22,7 +22,7 @@ export const RootHeroContainer = styled.section`
         text-transform: uppercase;
         font-weight: 500;
         font-size: 1.5rem;
-        color: ${({theme}) => theme.colors.helper};
+        color: ${({theme}) => theme.colors.secondary.main};
     }
 
     .hero-heading {
@@ -54,7 +54,8 @@ export const RootHeroContainer = styled.section`
 
 export const HeroButton = styled(Button)`
 
-    &:hover, &:active {
+    &:hover, 
+    &:active {
         box-shadow: ${({ theme }) => theme.colors.shadowSupport};
     }
 
